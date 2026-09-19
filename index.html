@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Slide Changer</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Georgia,serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.8;
+}
+
+header{
+    background:linear-gradient(135deg,#1f2937,#111827);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    border-bottom:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+    z-index:100;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2563eb;
+    margin:0 12px;
+    font-weight:bold;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:25px;
+}
+
+section{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-top:0;
+}
+
+.chapter-list a{
+    display:block;
+    margin:10px 0;
+    padding:12px;
+    background:#f3f4f6;
+    border-radius:6px;
+    text-decoration:none;
+    color:#111827;
+}
+
+.chapter-list a:hover{
+    background:#e5e7eb;
+}
+
+.chapter-list .location{
+    color:#6b7280;
+    font-weight:normal;
+    font-style:italic;
+}
+
+.cover-wrapper{
+    position:relative;
+    width:100%;
+    max-width:380px;
+    margin:0 auto 30px auto;
+}
+
+.cover-image{
+    width:100%;
+    display:block;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.side-menu{
+    width:180px;
+    background:white;
+    border-radius:8px;
+    padding:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.side-menu a{
+    display:block;
+    padding:12px;
+    margin-bottom:10px;
+    text-decoration:none;
+    color:#111827;
+    font-weight:bold;
+    border-radius:6px;
+    background:#f3f4f6;
+}
+
+.hero-layout{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:30px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
+.cover-column{
+    width:100%;
+}
+
+.start-reading{
+    margin-top:22px;
+    text-align:center;
+}
+
+.start-reading a{
+    display:inline-block;
+    padding:14px 24px;
+    background:white;
+    color:#111827;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border:none;
+    transition:transform 0.2s ease;
+}
+
+.start-reading a:hover{
+    transform:translateY(-2px);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero-layout">
+
+<div class="side-menu">
+<a href="#synopsis">Synopsis</a>
+<a href="#characters">Characters</a>
+<a href="#themes">Themes</a>
+<a href="#chapters">Chapters</a>
+<a href="#" data-feedback>Feedback</a>
+</div>
+
+<div class="cover-column">
+<div class="cover-wrapper">
+
+<img src="cover.png"
+     alt="The Slide Changer Cover"
+     class="cover-image">
+
+<div class="start-reading">
+<a id="startReading" href="chapter.html">
+Start Reading
+</a>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</header>
+
+<nav>
+<a href="#synopsis">Synopsis</a>
+<a href="#characters">Characters</a>
+<a href="#themes">Themes</a>
+<a href="#chapters">Chapters</a>
+<a href="#" data-feedback>Feedback</a>
+</nav>
+
+<main>
+
+<section id="synopsis">
+
+<h2>Synopsis</h2>
+
+<p>
+At a rooftop restaurant in Hyderabad, Dhriti asks her friends a question that sounds like a game. Would you rather marry a man who earns less than you but is plainly capable, or one who earns more than he has any right to? Nobody gives the answer she is hoping for.
+</p>
+
+<p>
+Dhriti earns nine lakhs a year as a junior HR executive. Sahishnu, whose ambitious healthcare project collapsed when its funding did, earns three as a data-entry operator. She has fallen for him before they have ever met, and she is sure that if he learns her salary, he will say no before the first date. So she bends the truth, and drafts a reluctant mutual friend to carry it.
+</p>
+
+<p>
+A lie that small was never going to stay small. Told out of order, this is a story about money, merit and what a family will and will not forgive - and about the woman who decided, quietly, exactly what she was willing to risk.
+</p>
+
+</section>
+
+<section id="characters">
+
+<h2>Main Characters</h2>
+
+<h3>Dhriti</h3>
+
+<p>
+A junior HR executive in Hyderabad, still living with her parents. Warm, stubborn and far more strategic than she lets on, she has a habit of asking the question everyone else would rather avoid.
+</p>
+
+<h3>Sahishnu</h3>
+
+<p>
+A hands-on learner who never blamed the system for the exams he could not crack. He has built something real once and watched it fall apart, and he is not sure he can afford to believe in himself again.
+</p>
+
+<h3>Manish</h3>
+
+<p>
+Dhriti's friend and Sahishnu's family friend, and so the one person standing between them. He has a secret of his own, which turns out to be the easiest thing in the world to use against him.
+</p>
+
+<h3>Vijay</h3>
+
+<p>
+Sahishnu's closest friend, a young doctor and the man whose idea started the project. Steady, practical, and better at hoping than he admits.
+</p>
+
+</section>
+
+<section id="themes">
+
+<h2>Genres &amp; Themes</h2>
+
+<p>
+<strong>Genres:</strong>
+Contemporary Romance, Relationship Drama, Slice of Life
+</p>
+
+<p>
+<strong>Themes:</strong>
+Love versus Expectation, Money and Merit, Family Pressure, Small Lies, Choosing Your Own Life
+</p>
+
+</section>
+
+<section id="chapters">
+
+<h2>Chapters</h2>
+
+<div class="chapter-list" id="chapterList"></div>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 Kesava Nittala
+</footer>
+
+<script>
+
+const list = document.getElementById("chapterList");
+
+fetch("chapters.json")
+.then(response => {
+
+    if(!response.ok){
+        throw new Error("Chapter list not found");
+    }
+
+    return response.json();
+
+})
+.then(chapters => {
+
+    const start = document.getElementById("startReading");
+
+    if(start && chapters.length){
+        start.href = `chapter.html?file=${encodeURIComponent(chapters[0].file)}`;
+    }
+
+    chapters.forEach(c => {
+
+        const a = document.createElement("a");
+        a.href = `chapter.html?file=${encodeURIComponent(c.file)}`;
+
+        const parts = c.title.split(" – ");
+        a.appendChild(document.createTextNode(parts[0]));
+
+        if(parts.length > 1){
+            const span = document.createElement("span");
+            span.className = "location";
+            span.textContent = " – " + parts.slice(1).join(" – ");
+            a.appendChild(span);
+        }
+
+        list.appendChild(a);
+
+    });
+
+})
+.catch(() => {
+
+    list.textContent = "Chapters could not be loaded.";
+
+});
+
+</script>
+
+<script src="feedback.js" data-story="The Slide Changer"></script>
+
+</body>
+</html>
